@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkTrack | Login></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+
+
+<body>
+    <a href="./Index.html">
+         <img class="contenedor-m" src="./image/TalkTrack_logo2.1.png" alt="Logo">
+    </a>
+
+
+    <div class="login-container">
+        <div class="login-card">
+ <h1 class="logo">Iniciar Sesión</h1>
+        <form id="form-action" method="post" class="formulario" novalidate>
+            
+           <label  for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Tu Email" name="email" required>
+            <small>Porfavor ingrese su E-mail</small>
+
+                <div class="password-section">
+                    <label for="password">Contraseña</label>
+                     <a href="./Public/Olvide.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+                <input type="password" id="password" placeholder="Tu Password" name="password" required>
+                <small>Porfavor ingrese su Contraseña</small>
+
+                <div class="recordarme">
+                     <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+                
+            <input type="submit" class="boton"  value="Iniciar Sesión">
+        </form>
+     
+        <div class="register-text">¿Aún No Tienes Una Cuenta?
+            <a href="./Public/Crear.html"> Obtener Una</a>
+        </div>
+    </div>  
+         <script src="./python/login.py"></script>
+         
+</body>
