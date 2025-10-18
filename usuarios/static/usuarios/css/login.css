@@ -1,0 +1,147 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+
+}
+body {
+    background-image: linear-gradient(to bottom, #c9f8fa, #d9f9ff, #eaf9ff, #f8fbff, #ffffff);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-m {
+width: 12rem;
+}
+img.contenedor-m {
+    position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo{
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #5CE1E6
+}
+.sub-logo{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0e343e;
+}
+.comtainer{
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+small{
+    display: none;
+}
+.password-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forgot-password {
+    font-size: 12px;
+    color: #37d1d9;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.recordarme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recordarme input {
+    margin-right: 8px;
+}
+.boton {
+    width: 100%;
+    padding: 12px;
+    background: #5ce1e6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background: #49cfd3;
+}
+.register-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.register-text a {
+    color: #37d1d9;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+.was-validated small{
+    display: block;
+    color: red;
+    padding: 1rem;
+    margin-top: -1.5rem;
+}

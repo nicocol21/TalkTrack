@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkTrack | Login</title>
+    <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
+</head>
+
+<body>
+    <a href="/">
+        <img class="contenedor-m" src="{% static 'image/TalkTrack_logo2.1.png' %}" alt="Logo">
+    </a>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h1 class="logo">Iniciar Sesión</h1>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="color:red;">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+
+            <form id="form-action" method="post" class="formulario">
+                {% csrf_token %}
+                
+                <label for="correo">E-mail</label>
+                <input type="email" id="correo" placeholder="Tu Email" name="correo" required>
+
+                <div class="password-section">
+                    <label for="contrasena">Contraseña</label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+                <input type="password" id="contrasena" placeholder="Tu Password" name="contrasena" required>
+
+                <div class="recordarme">
+                     <input type="checkbox" id="remember" name="remember">
+                     <label for="remember">Recordarme</label>
+                </div>
+                
+                <input type="submit" class="boton" value="Iniciar Sesión">
+            </form>
+
+            <div class="register-text">
+                ¿Aún no tienes una cuenta?
+                <a href="#">Obtener una</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
