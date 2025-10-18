@@ -40,7 +40,8 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # puedes dejarlo vacío
+        # Agregamos una carpeta global de plantillas además de las de las apps
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,5 +88,12 @@ USE_TZ = True
 
 # ✅ Archivos estáticos
 STATIC_URL = 'static/'
+# Directorios adicionales donde Django buscará archivos estáticos en desarrollo
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# Carpeta destino para collectstatic en producción
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

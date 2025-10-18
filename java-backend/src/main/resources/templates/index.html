@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TalkTrack - Index</title>
+    <link rel="stylesheet" th:href="@{/css/Styles.css}">
+    <link rel="stylesheet" th:href="@{/usuarios/css/login.css}">
+</head>
+<body>
+    <div th:replace="~{::body}"></div>
+    <!-- Puedes personalizar aquí o incluir fragments -->
+    <div>
+        <a th:href="@{/}">
+            <img th:src="@{/image/TalkTrack_logo2.1.png}" alt="Logo" style="max-width:180px;">
+        </a>
+        <h1>Bienvenido a TalkTrack (Java Backend)</h1>
+        <p>Página servida por Spring Boot + Thymeleaf</p>
+        <p><a th:href="@{/crear}">Registro</a> • <a th:href="@{/olvide}">Olvidé</a></p>
+    </div>
+</body>
+</html>

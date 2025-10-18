@@ -20,3 +20,12 @@ def login_view(request):
 
 def bienvenido_view(request):
     return render(request, 'usuarios/bienvenido.html')
+
+
+def crear_view(request):
+    # Si hubiera POST aquí se procesaría el formulario
+    return render(request, 'usuarios/crear.html')
+
+
+def olvide_view(request):
+    return render(request, 'usuarios/olvide.html')

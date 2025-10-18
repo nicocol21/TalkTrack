@@ -4,20 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvenido - TalkTrack</title>
+    <title>Recuperar contraseña - TalkTrack</title>
     <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
 </head>
 <body>
     <a href="{% url 'login' %}"><img class="contenedor-m" src="{% static 'image/TalkTrack_logo2.1.png' %}" alt="Logo"></a>
     <div class="login-container">
         <div class="login-card">
-            <h1 class="logo">Bienvenido</h1>
-            {% if usuario %}
-                <p>Hola, {{ usuario }}!</p>
-            {% else %}
-                <p>Has iniciado sesión correctamente.</p>
-            {% endif %}
-            <p><a href="{% url 'login' %}">Volver al login</a></p>
+            <h1 class="logo">Recuperar contraseña</h1>
+            <p>Hemos enviado las instrucciones para confirmar tu cuenta a tu email</p>
         </div>
     </div>
 </body>
